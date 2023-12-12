@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #bfafa9;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.interfaces.ControllerPrincipalPage">
+   <children>
+      <Label layoutX="50.0" layoutY="21.0" prefHeight="96.0" prefWidth="401.0" text="S  U  D  O  K  U" textAlignment="CENTER">
+         <font>
+            <Font name="Gadugi Bold" size="56.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5238095238095238" endY="1.0" startX="0.3904761904761905">
+               <stops>
+                  <Stop color="#24072f" />
+                  <Stop color="#5d7bc2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="206.0" fitWidth="197.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/bambu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonHowToPlay" layoutX="386.0" layoutY="404.0" mnemonicParsing="false" onAction="#clickButtonaf" style="-fx-background-color: #827b78;" text="How to play" textFill="#2f4f7c">
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="248.0" layoutY="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="233.0" style="-fx-background-color: #827b78;" text="Level" textAlignment="CENTER" textFill="#2f4f7c">
+        <items>
+          <MenuItem fx:id="menuItemEasy" mnemonicParsing="false" onAction="#clickButtonEasy" text="Easy" />
+            <MenuItem fx:id="menuItemNormal" mnemonicParsing="false" onAction="#clickButtonNormal" text="Normal" />
+          <MenuItem fx:id="menuItemHard" mnemonicParsing="false" onAction="#clickButtonHard" text="Hard" />
+        </items>
+         <font>
+            <Font name="Ebrima" size="14.0" />
+         </font>
+      </MenuButton>
+      <TextField fx:id="txtName" layoutX="247.0" layoutY="207.0" prefHeight="25.0" prefWidth="233.0" />
+      <Label layoutX="140.0" layoutY="143.0" text="Hello, user! Let's play!" textAlignment="CENTER" textFill="#2f4f7c">
+         <font>
+            <Font name="Ebrima" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="206.0" text="First, type your name:" textAlignment="CENTER" textFill="#2f4f7c">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="261.0" text="Difine, also, your level:" textAlignment="CENTER" textFill="#2f4f7c">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="405.0" text="In doubt, learn:" textAlignment="CENTER" textFill="#2f4f7c">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtErro" layoutX="248.0" layoutY="306.0" prefHeight="17.0" prefWidth="233.0" textFill="#f20101" />
+   </children>
+</AnchorPane>
